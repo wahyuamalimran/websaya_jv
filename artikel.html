@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Amal Imran</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #a5c8ab);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #f25ee0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 5px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar{
+    background-color: #11571e;
+
+}
+    </style>
+</head>
+<body>
+    <!-- Navigasi Menu Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Back to Home
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="artikel.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buku_tamu.html">Buku Tamu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pendidikan.html">Riwayat Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Untitled-1.html">Harga Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript.html">Java Script</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Informasi Pribadi</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Nama : Wahyu Amal Imran</li>
+                        <li class="list-group-item">NIM : 220209502089</li>
+                        <li class="list-group-item">Kelas : PTIK F</li>
+                        <li class="list-group-item">Alamat : Pallantikang 3, KAB. GOWA</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Riwayat Pendidikan</h3>
+                    <p>Sekolah Asal: <strong>SMA</strong> Negeri <sup>8</sup> BULUKUMBA</p>
+                    <p>Universitas: <u>Universitas Negri Makassar</u></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container mt-4">
+            <h3>Pengalaman dan Prestasi</h3>
+            <p><strong><i>Santai Tapi Tidak Lalai</i></strong></p>
+            <p>Juara 3 futsal ice sport JTIK 2023</p>
+            <p>Kami termasuk saya yang hobi olahraga dalam bentuk bermain futsal mengikuti pertandingan resmi yang diadakan oleh JTIK. Kami memulai pertandingan tersebut dengan mencari pemain yang ingin bermain pada pertandingan tersebut, dan setelah menentukan pemain kami, salah satu perwakilan dari kami mengikuti yang namanya TM atau technical meeting untuk menentukan aturan-aturan dalam pertandingan tersebut serta menentukan lawan yang akan kami hadapi. Kami berhasil mencapai semifinal dan meraih gelar juara 3, dan alhamdulillah kami bangga dengan hasil tersebut.</p>
+        </div>
+    
+        <div class="container mt-4">
+            <h3>Mata Kuliah yang Telah Dipelajari</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Belajar dan Pembelajaran</li>
+                <li class="list-group-item">Basis Data</li>
+                <li class="list-group-item">Komunikasi Data</li>
+                <li class="list-group-item">Elektronika Digital dan Analog</li>
+            </ul>
+        </div>
+    
+        <div class="container mt-4">
+            <h3>Daftar Dosen</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Prof. Dr. Ir. H. Muh Yahya, M.Kes., M.Eng. IPU. ASEAN. ENG</li>
+                <li class="list-group-item">Muliadi, S.Pd., M.T</li>
+                <li class="list-group-item">Al Imran, S.Pd., M.P</li>
+                <li class="list-group-item">Prof. Dr. Ir. Hj. Hasanah Nu, M.T</li>
+            </ul>
+            <div class="container mt-4">
+                <h2>Slider Gambar</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ul>
+                    
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image.jpg" alt="Gambar 1" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG-20231009-WA0003.jpg" alt="Gambar 2" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG-20231009-WA0004.jpg" alt="Gambar 3" style="width:100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMG-20231009-WA0007.jpg" alt="Gambar 4" style="width:100%;">
+                        </div>
+                    </div>
+                    
+                    <!-- Tombol navigasi -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container mt-4">
+            <h3>Data Mahasiswa</h3>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>NO</th>
+                        <th>Nama Lengkap</th>
+                        <th>Nama Panggilan</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Alamat</th>
+                        <th>Asal Sekolah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Wahyu Amal Imran</td>
+                        <td>Wahyu</td>
+                        <td>Laki-laki</td>
+                        <td>Pallantikang 3</td>
+                        <td>SMA NEGRI 8 MODEL BULUKUMBA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Wahyu Ilahi SS</td>
+                        <td>Ayyu</td>
+                        <td>Laki-laki</td>
+                        <td>Muhajjrin</td>
+                        <td>SMK NEGRI 1 ENREKANG</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ulvitasari</td>
+                        <td>Ulvi</td>
+                        <td>Perempuan</td>
+                        <td>Gowa</td>
+                        <td>MA Darunnajah Botong</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Tautan ke Bootstrap JavaScript dan jQuery (Diperlukan untuk komponen Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    

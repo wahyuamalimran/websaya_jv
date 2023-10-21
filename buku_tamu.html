@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Amal Imran</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tautan ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Animasi latar belakang */
+       /* Animasi latar belakang */
+body {
+    animation: gradientBackground 5s ease infinite;
+    background: linear-gradient(45deg, #f1f2f4, #a5c8ab);
+    background-size: 400% 400%;
+    margin: 0;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Warna teks dan padding untuk konten */
+.content {
+    color: #FFF8C9;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #f25ee0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-brand {
+    color: #FFCF96;
+}
+
+.nav-link {
+    color: #FFCF96;
+    margin: 5px;
+}
+
+.carousel-caption {
+    background: rgba(250, 249, 249, 0.5);
+    color: #1f1f1e;
+}
+
+/* Ukuran maksimum gambar dalam Carousel */
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body{
+    font-family: Arial, sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.custom-font {
+    font-family: "Courier New", monospace; /* Font khusus untuk elemen dengan class "custom-font" */
+}
+
+.navbar {
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+}
+
+.navbar a:link,
+.navbar a:visited {
+    text-decoration: none; /* Hilangkan dekorasi tautan */
+}
+
+.navbar a:active,
+.navbar a:hover {
+    border-bottom: 2px solid #FFCF96; /* Warna dan lebar garis bawah saat aktif dan hover */
+}
+
+.navbar a:focus {
+    outline:#FFCF96 /* Hilangkan outline default saat fokus */
+}
+
+/* CSS untuk garis bawah pada navbar setelah diklik */
+.nav-link.active {
+    border-bottom: 2px solid #FFCF96;
+}
+
+.carousel {
+    max-width: 800px; /* Lebar maksimum carousel */
+    margin: 0 auto; /* Pusatkan carousel secara horizontal */
+}
+
+.carousel-inner img {
+    width: 600px; /* Atur lebar yang Anda inginkan */
+    height: 600px; /* Atur tinggi yang Anda inginkan */
+    object-fit: cover; /* Atur pemadatan objek gambar jika perlu */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar{
+    background-color: #11571e;
+
+}
+    </style>
+</head>
+<body>
+    <!-- Navigasi Menu Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Back to Home
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="buku_tamu.html">Buku Tamu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pendidikan.html">Riwayat Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Untitled-1.html">Harga Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript.html">Java Script</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container mt-5">
+            <h2 class="text-center">Form Buku Tamu</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="laki-laki" value="L" checked>
+                        <label class="form-check-label" for="laki-laki">Laki-laki</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="perempuan" value="P">
+                        <label class="form-check-label" for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat Tinggal:</label>
+                    <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat Tinggal">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+                </div>
+                <div class="form-group">
+                    <label>Aktif pada Sosial Media:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="facebook" name="facebook" value="Ya" checked>
+                        <label class="form-check-label" for="facebook">Facebook</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="twitter" name="twitter" value="Ya" checked>
+                        <label class="form-check-label" for="twitter">Twitter</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="instagram" name="instagram" value="Ya" checked>
+                        <label class="form-check-label" for="instagram">Instagram</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="path" name="path" value="Ya" checked>
+                        <label class="form-check-label" for="path">Path</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="info">Mengetahui web ini dari:</label>
+                    <select class="form-control" id="info">
+                        <option selected="selected">-= Pilih =-</option>
+                        <option value="web">Web</option>
+                        <option value="surat kabar">Surat Kabar</option>
+                        <option value="teman kerabat">Teman/Kerabat</option>
+                        <option value="browsing internet">Browsing Internet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea class="form-control" id="pesan" rows="4" placeholder="Masukkan Pesan Anda"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    
+        <!-- Tautan ke Bootstrap JavaScript dan jQuery (Diperlukan untuk komponen Bootstrap) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+    
